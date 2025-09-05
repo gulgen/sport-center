@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 header">
+        <div class="container px-2 mx-auto flex justify-between">
+            <div id="logo" class="bg-cover">
+                <img src="img/logo.png" alt="Logo Picture">
+            </div>   
+            <nav class="hidden md:flex items-center space-x-8 mx-auto text-white font-bold">
+                <a href="#hero" class="hover:border-b-3 hover:border-b-orange-400 text-xl">Home</a>
+                <a href="#classes" class="hover:border-b-3 hover:border-b-orange-400 text-xl text-xl">Classes</a>
+                <a href="#trainers" class="hover:border-b-3 hover:border-b-orange-400 text-xl text-xl">Trainers</a>
+                <a href="#review" class="hover:border-b-3 hover:border-b-orange-400 text-xl text-xl">Review</a>
+                <a href="#contact" class="hover:border-b-3 hover:border-b-orange-400 text-xl text-xl">Contact</a>
+                <a href="#" class="bg-orange-400 font-bold px-3 py-1 rounded-lg">JOIN US</a>  
+            </nav>    
+            <button class="md:hidden mx-auto" onclick="toggleMenu()"><i class="fa-solid fa-bars text-white text-4xl"></i></button>  
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full bg-black/65 text-white px-6 py-4 space-y-3 text-center">
+            <a href="#hero" class="block text-lg font-bold w-full">Home</a>
+            <a href="#classes" class="block text-lg font-bold w-full">Classes</a>
+            <a href="#trainers" class="block text-lg font-bold w-full">Trianers</a>
+            <a href="#review" class="block text-lg font-bold w-full">Review</a>
+            <a href="#contact" class="block text-lg font-bold w-full">Contact</a>
+        </div>
+    </header>
+    <!-- Hero -->
+    <section id="hero" class="relative h-screen bg-cover bg-center bg-[url(img/hero-man.jpg)] pt-10">
+        <div class="z-10 relative container px-5 mx-auto py-28 md:py-0 xl:py-28 text-start ">
+            <span class="inline-block bg-[#355592] text-white px-3 py-1 text-lg font-bold rounded shadow-black text-shadow-black">POWERFULL</span><br>
+            <h1 class="inline-block md:block mt-1 text-5xl md:text-6xl font-extrabold text-white leading-snug text-shadow-black">Group</h1>
+            <h1 class="inline-block md:block mt-1 text-5xl md:text-6xl font-extrabold text-white leading-snug text-shadow-black">Practice</h1>
+            <h1 class="inline-block md:block mt-1 text-5xl md:text-6xl font-extrabold text-white leading-snug text-shadow-black">With Trainer</h1>            
+            <p class="mt-3 text-white font-semibold text-xl md:text-2xl leading-snug tracking-wide px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, excepturi temporibus omnis quae exale, exercitationem id sed qui, architecto facilis modi quidem harum reprehenderit amet commodi? <br>  Officiis, veritatis error enim aperiam id voluptatum, ducimus quas nostrum ex suscipit .</p>
+            <div id="buttons" class="flex flex-col md:flex-row gap-y-2 md:gap-x-8 mt-1 px-4">
+                <a href="#" class="bg-[#355592] text-white px-6 py-3 rounded-lg font-extrabold text-xl text-shadow-black">Sign Up</a>
+                <a href="#" class="border border-white text-white px-6 py-3 rounded-lg font-extrabold text-xl text-shadow-black">Details</a>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section id="stats" class="bg-blue-50 py-12">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="w-1/2 md:w-full grid grid-col-1 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white px-4 py-3">
+                    <p class="text-2xl font-bold text-[#355592]">325</p>
+                    <p class="text-2xl font-bold mt-4 text-black">Course</p>
+                </div>
+                <div class="bg-white px-4 py-3">
+                    <p class="text-2xl font-bold text-[#355592]">405</p>
+                    <p class="text-2xl font-bold mt-4 text-black">Workout</p>
+                </div> 
+                <div class="bg-white px-4 py-3">
+                    <p class="text-2xl font-bold text-[#355592]">305</p>
+                    <p class="text-2xl font-bold mt-4 text-black">Working Hour</p>
+                </div> 
+                <div class="bg-white px-4 py-3">
+                    <p class="text-2xl font-bold text-[#355592]">705</p>
+                    <p class="text-2xl font-bold mt-4 text-black">Client</p>
+                </div>                 
+            </div>
+        </div>
+    </section>
+    <!-- Our Classes  -->
+    <section id="classes" class="relative pt-15">
+        <div class="clip-bg">
+            <div class="container mx-auto py-16 z-10">
+                <div class="text-center">
+                    <h2 class="inline-block text-[#355592] font-extrabold md:font-bold text-3xl  md:text-5xl after:content-[''] after:block after:w-25 after:h-2 after:bg-orange-400 after:mx-auto after:mt-5 after:rounded uppercase">Our Classes</h2>
+                    <p class="text-black-700  w-80 md:w-full place-self-center text-xl font-bold pt-15">
+                    Lorem ipsum is not simply random text. It has roots in a piece of classical at <br> Hampden-Sydney College.
+                    </p>
+                </div>     
+                <div class="flex flex-wrap flex-2 w-75 md:w-full mx-auto justify-evenly gap-8  md:gap-4 mt-8">
+                    <button class="bg-[#355592] text-white px-6 py-3 rounded-lg font-bold text-2xl  md:text-lg tab-button active-tab" data-target="yoga">Yoga</button>
+                    <button class="bg-[#355592] text-white px-6 py-3 rounded-lg font-bold text-2xl  md:text-lg tab-button" data-target="group">Group</button>
+                    <button class="bg-[#355592] text-white px-6 py-3 rounded-lg font-bold text-2xl  md:text-lg tab-button" data-target="solo">Solo</button>
+                    <button class="bg-[#355592] text-white px-6 py-3 rounded-lg font-bold text-2xl  md:text-lg tab-button" data-target="strectching">Stretching</button>
+                </div>                
+                <!-- Yoga Section -->                
+                <div id="yoga" class="grid md:grid-cols-2 tab-content ">                
+                    <div class="text-left mt-10 mx-10">
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">Why are your Yoga?</h3>
+                        <p class="text-black-600 text-lg font-bold mb-4 tracking-wider mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt officia tempore laudantium! Culpa, quos est repellendus officiis asperiores sed explicabo numquam unde dignissimos maxime aut illum ullam mollitia libero?</p>
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">When comes Yoga Your Time.</h3>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Saturday - Sunday: 8:00am – 10:00am</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Monday - Tuesday: <span class="inline-block px-20 md:px-0"> 10:00am</span> –12:00pm</p>
+                        <p class="text-black-600 text-lg font-bold tracking-widest mb-5">Wednesday - Friday: <span class="inline-block px-20 md:px-0"> 3:00pm</span> – 6:00pm</p>
+                    </div>                    
+                    <div class="mt-10 ">
+                        <img class="bg-cover w-full md:max-w-lg md:h-auto place-self-center mt-10" src="img/yoga.jpg" alt="">
+                    </div>                
+                </div>                
+                <!-- Group Section -->                
+                <div id="group" class="grid md:grid-cols-2 tab-content hidden">                
+                    <div class="text-left mt-10 mx-10">
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">Why are your Group?</h3>
+                        <p class="text-black-600 text-lg font-bold mb-4 tracking-wider mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt officia tempore laudantium! Culpa, quos est repellendus officiis asperiores sed explicabo numquam unde dignissimos maxime aut illum ullam mollitia libero?</p>
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">When comes Group Your Time.</h3>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Saturday - Sunday: 8:00am – 10:00am</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Monday - Tuesday: <span class="inline-block px-20 md:px-0"> 10:00am</span> – 12:00pm</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Wednesday - Friday: <span class="inline-block px-20 md:px-0"> 3:00pm</span> – 6:00pm</p>
+                    </div>                    
+                    <div class="mt-10 ">
+                        <img class="bg-cover w-full md:max-w-lg md:h-auto place-self-center mt-10" src="img/group.webp" alt="">
+                    </div>                
+                </div>                
+                <!-- Solo Section -->                
+               <div id="solo" class="grid md:grid-cols-2 tab-content hidden">                
+                    <div class="text-left mt-10 mx-10">
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">Why are your Solo?</h3>
+                        <p class="text-black-600 text-lg font-bold mb-4 tracking-wider mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt officia tempore laudantium! Culpa, quos est repellendus officiis asperiores sed explicabo numquam unde dignissimos maxime aut illum ullam mollitia libero?</p>
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">When comes Solo Your Time.</h3>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Saturday - Sunday: 8:00am – 10:00am</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Monday - Tuesday: <span class="inline-block px-20 md:px-0"> 10:00am</span> – 12:00pm</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Wednesday - Friday: <span class="inline-block px-20 md:px-0"> 3:00pm</span> – 6:00pm</p>
+                    </div>                    
+                    <div class="mt-10 ">
+                        <img class="bg-cover w-full md:max-w-lg md:h-auto place-self-center mt-10" src="img/solo.jpg" alt="">
+                    </div>                
+                </div>  
+                <!-- Stretching Section -->                
+                <div id="strectching" class="grid md:grid-cols-2 tab-content hidden">                
+                    <div class="text-left mt-10 mx-10">
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">Why are your Stretching?</h3>
+                        <p class="text-black-600 text-lg font-bold mb-4 tracking-wider mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt officia tempore laudantium! Culpa, quos est repellendus officiis asperiores sed explicabo numquam unde dignissimos maxime aut illum ullam mollitia libero?</p>
+                        <h3 class="text-black-600 text-4xl md:text-3xl font-extrabold mb-3">When comes Stretching Your Time.</h3>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Saturday - Sunday: 8:00am – 10:00am</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Monday - Tuesday<span class="inline-block px-20 md:px-0"> 10:00am</span>– 12:00pm</p>
+                        <p class="text-black-600 text-lg font-bold tracking-wider mb-5">Wednesday - Friday<span class="inline-block px-20 md:px-0"> 3:00pm</span> – 6:00pm</p>
+                    </div>                    
+                    <div class="mt-10 ">
+                        <img class="bg-cover w-full md:max-w-lg md:h-auto place-self-center mt-10" src="img/stret.webp" alt="">
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BMI Calculator -->
+    <section id="calculator" class="py-28">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-col-1 md:grid-cols-2">
+                <div class="text-left">
+                    <h2 class="text-[#355592] font-extrabold text-7xl md:text-4xl mb-8">BMI Calculator</h2>
+                    <p class="text-black-600 text-xl font-bold tracking-wider mb-10">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <p class="text-black-600 text-xl font-bold tracking-wider mb-10">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <div class="flex flex-col gap-2 md:flex-row my-8">
+                        <div>
+                            <input id="height" type="text" class="border-2 px-4 py-2 rounded w-40 md:w-1/2 placeholder:text-black-600" placeholder="Your Height">
+                            <span class=" text-black-600 text-2xl font-bold tracking-wider">cm</span>
+                        </div>
+                        <div>
+                            <input id="weight" type="text" class="border-2 px-4 py-2 rounded w-40 md:w-1/2 placeholder:text-black-600" placeholder="Your Weight">
+                            <span class="text-black-600 text-2xl font-bold tracking-wider">kg</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bmi-section relative">
+                    <p class="text-center text-2xl md:text-3xl font-semibold text-black mb-2">Your BMI</p>
+                    <img class="relative bg-cover w-full place-self-center" src="img/bmi-index.jpg" alt="BMI Index Photo">
+                    <!-- Arrow  -->
+                    <div id="bmi-arrow" class="absolute mt-2 text-2xl w-5 h-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Best Trainers -->
+    <section id="trainers" class="bg-blue-50 pt-15">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="inline-block text-[#355592] font-extrabold md:font-bold text-3xl md:text-5xl after:content-[''] after:block after:w-25 after:h-2 after:bg-orange-400 after:mx-auto after:mt-5 after:rounded uppercase pt-15 pb-15">Our Best Trainers</h2>
+                <p class="text-black-700 w-70 mx-auto md:w-full text-xl font-bold">Lorem Ipsum is not simply random text. It has roots in a piece of classical at <br> Hampden-Sydney College.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 w-full justify-items-center gap-x-4 gap-y-6 mt-10 mb-10">
+                <div class="relative inline-block">
+                    <div class="review-card">
+                        <div class="card block-top"></div>
+                        <div class="card block-bottom"></div>
+                        <div class="card block-left"></div>
+                        <div class="card block-right"></div>
+                        <div class="border-2 border-orange-400 rounded-lg overflow-hidden">
+                            <img src="img/trainer1.jpg" alt="Trainer" class="w-full h-auto bg-cover">
+                            <div class="review-card-text flex justify-items-center px-5 py-5">
+                                <h2 class="text-2xl font-bold">Joe Doe</h2>
+                                <p class="text-lg font-semibold py-1">Yoga Trainer</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>                                
+                <div class="relative inline-block">
+                    <div class="review-card">
+                        <div class="card block-top"></div>
+                        <div class="card block-bottom"></div>
+                        <div class="card block-left"></div>
+                        <div class="card block-right"></div>
+                        <div class="border-2 border-orange-400 rounded-lg overflow-hidden">
+                            <img src="img/trainer2.jpg" alt="Trainer" class="w-full h-auto bg-cover">
+                            <div class="review-card-text flex justify-items-center px-5 py-5">
+                                <h2 class="text-2xl font-bold">John Smith</h2>
+                                <p class="text-lg font-semibold py-1">Cardio Trainer</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>                                
+                <div class="relative inline-block">
+                    <div class="review-card">
+                        <div class="card block-top"></div>
+                        <div class="card block-bottom"></div>
+                        <div class="card block-left"></div>
+                        <div class="card block-right"></div>
+                        <div class="border-2 border-orange-400 rounded-lg overflow-hidden">
+                            <img src="img/trainer3.jpg" alt="Trainer" class="w-full h-auto bg-cover">
+                            <div class="review-card-text flex justify-items-center px-5 py-5">
+                                <h2 class="text-2xl font-bold">Jane Doe</h2>
+                                <p class="text-lg font-semibold py-1">Cardio Trainer</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>                                
+            </div>
+        </div>
+    </section>
+    <!-- Product  -->
+    <section id="product">
+        <div class="container mx-auto">
+            <div class="text-center mb-15">
+                <h2 class="inline-block text-[#355592] font-extrabold md:font-bold text-3xl md:text-5xl after:content-[''] after:block after:w-25 after:h-2 after:bg-orange-400 after:mx-auto after:mt-5 after:rounded uppercase pt-15 pb-15">Purchase From Us</h2>
+                <p class="text-black-700 w-70 mx-auto md:w-full text-xl font-bold">Lorem Ipsum is not simply random text. It has roots in a piece of classical at <br> Hampden-Sydney College.</p>
+            </div>
+            <div class="grid grid-col-1 md:grid-cols-4 gap-x-8 mt-10 px-10 place-self-center">
+                <div class="rounded shadow-xl/30 mb-10 w-md h-auto md:w-full">
+                    <img class="rounded-tl-xl rounded-tr-xl" src="img/purchase1.jpg" alt="Product 1">
+                    <div class="flex flex-col items-center h-max">
+                        <h2 class="text-black-700 text-2xl font-bold">Kettlebell / 5kg</h2>
+                        <p class="py-1 text-black-700 text-lg font-bold"><span class="line-through">89,99</span> / 59,99$</p>
+                        <div class="grid grid-cols-3 items-center p-3">
+                             <div class="flex justify-start">
+                                <i class="fa-solid fa-cart-shopping text-black-700 text-lg font-bold"></i>
+                        </div>
+                            <div class="flex justify-center items-center">
+                                <span class="text-black-700 text-lg font-bold whitespace-nowrap">Add To Cart</span>
+                            </div>
+                        <div class="flex justify-end">
+                </div>
+            </div>
+
+                    </div>
+                </div>
+                <div class="rounded shadow-xl/30 mb-10 w-md h-auto md:w-full">
+                    <img class="rounded-tl-xl rounded-tr-xl" src="img/purchase2.jpg" alt="Product 2">
+                    <div class="flex flex-col items-center h-max">
+                        <h2 class="text-black-700 text-2xl font-bold">Treadmill / 5kg</h2>
+                        <p class="py-1 text-black-700 text-lg font-bold"><span class="line-through">899,99</span> / 599,999$</p>
+                        <div class="grid grid-cols-3 items-center p-3">
+                             <div class="flex justify-start">
+                                <i class="fa-solid fa-cart-shopping text-black-700 text-lg font-bold"></i>
+                             </div>
+                             <div class="flex justify-center items-center">
+                                <span class="text-black-700 text-lg font-bold whitespace-nowrap">Add To Cart</span>
+                             </div>
+                        <div class="flex justify-end">
+                </div>
+            </div>        
+                    </div>
+                </div>
+                <div class="rounded shadow-xl/30 mb-10 w-md h-auto md:w-full">
+                    <img class="rounded-tl-xl rounded-tr-xl" src="img/purchase3.jpg" alt="Product 2">
+                    <div class="flex flex-col items-center h-max">
+                        <h2 class="text-black-700 text-2xl font-bold text-center">Adjustable Dumbbell</h2>
+                        <p class="py-1 text-black-700 text-lg font-bold"><span class="line-through">89,99$</span> / 59,99$</p>
+                        <div class="grid grid-cols-3 items-center p-3">
+                             <div class="flex justify-start">
+                                <i class="fa-solid fa-cart-shopping text-black-700 text-lg font-bold"></i>
+                        </div>
+                            <div class="flex justify-center items-center">
+                                <span class="text-black-700 text-lg font-bold whitespace-nowrap">Add To Cart</span>
+                            </div>
+                        <div class="flex justify-end">
+                </div>
+            </div>           
+                    </div>
+                </div>                
+                <div class="rounded shadow-xl/30 mb-10 w-md h-auto md:w-full">
+                    <img class="rounded-tl-xl rounded-tr-xl" src="img/purchase4.jpg" alt="Product 4">
+                    <div class="flex flex-col items-center h-max">
+                        <h2 class="text-black-700 text-2xl font-bold">Kettlebell / 3kg</h2>
+                        <p class="py-1 text-black-700 text-lg font-bold"><span class="line-through">89.99</span> / 59.99$</p>
+                         <div class="grid grid-cols-3 items-center p-3">
+                             <div class="flex justify-start">
+                                <i class="fa-solid fa-cart-shopping text-black-700 text-lg font-bold"></i>
+                        </div>
+                            <div class="flex justify-center items-center">
+                                <span class="text-black-700 text-lg font-bold whitespace-nowrap">Add To Cart</span>
+                            </div>
+                        <div class="flex justify-end">
+                </div>
+            </div>
+                            <div></div>
+                        </div>              
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- Review Section -->
+    <section id="review" class="bg-blue-50 pb-15 pt-15">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="inline-block text-[#355592] font-extrabold md:font-bold text-3xl md:text-5xl after:content-[''] after:block after:w-25 after:h-2 after:bg-orange-400 after:mx-auto after:mt-5 after:rounded uppercase pt-15 pb-15">Review Client</h2>
+                <p class="text-black-700 w-70 mx-auto md:w-full text-xl font-bold">Lorem Ipsum is not simply random text. It has roots in a piece of classical at <br> Hampden-Sydney College.</p>
+            </div>
+            <div class="grid grid-col-1 md:grid-cols-2 my-5 mx-4 justify-evenly gap-x-6 gap-y-12">
+                <div class="reviews">
+                    <div class="flex items-center mt-5">
+                        <img src="img/client1.jpg" alt="Client 1" class="w-12 h-12 rounded-full">
+                        <div id="badges">
+                            <h2 class="text-black-900 font-bold text-lg mx-2">Diet Expert</h2>
+                            <p class="text-black-600 text-md mx-2">CFO</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-[#355592] p-4 rounded max-w-xl mt-5">
+                        <p class="text-white px-2 text-lg font-medium leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sequi quia, libero voluptate 
+                        ducimus earum quidem minus eveniet, ex esse rem sed numquam. Error magnam in vero 
+                        molestiae tempora nostrum.</p>
+                        <div class="absolute review-triangle-left bg-[#355592] opacity-25 w-10 h-10"></div>
+                        <div class="absolute review-triangle-right bg-[#355592] opacity-25 w-10 h-10"></div>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="flex items-center mt-5">
+                        <img src="img/client2.jpg" alt="Client 2" class="w-12 h-12 rounded-full">
+                        <div id="badges">
+                            <h2 class="text-black-900 font-bold text-lg mx-2">Cardio Trainer</h2>
+                            <p class="text-black-600 text-md mx-2">CEO</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-[#355592] p-4 rounded max-w-xl mt-5">
+                        <p class="text-white px-2 text-lg font-medium leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sequi quia, libero voluptate 
+                        ducimus earum quidem minus eveniet, ex esse rem sed numquam. Error magnam in vero 
+                        molestiae tempora nostrum.
+                        </p>
+                        <div class="absolute review-triangle-left bg-[#355592] opacity-25 w-10 h-10"></div>
+                        <div class="absolute review-triangle-right bg-[#355592] opacity-25 w-10 h-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="pt-15 mb-5">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="inline-block text-[#355592] font-extrabold md:font-bold text-3xl md:text-5xl after:content-[''] after:block after:w-25 after:h-2 after:bg-orange-400 after:mx-auto after:mt-5 after:rounded uppercase pt-15 pb-15">Contact</h2>
+                <p class="text-black-700 w-70 mx-auto md:w-full text-xl font-bold">Lorem Ipsum is not simply random text. It has roots in a piece of classical at <br> Hampden-Sydney College.</p>
+            </div>
+            <div class="grid grid-col-1 md:grid-cols-2 mt-20 gap-x-20 gap-y-10">
+                <div class="mx-auto md:mx-0">
+                    <div class="flex space-x-8">
+                        <div class="flex flex-col">
+                            <h2 class="text-black-700 text-3xl font-bold">Mobile Number</h2>
+                            <p class="text-black-700 text-md font-semibold">+135 773 321 4442</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-black-700 text-3xl font-bold">Email Address</h2>
+                            <p class="text-black-700 text-md font-semibold">demo@demo.com</p>
+                        </div>
+                    </div>
+                    <h2 class="text-black-700 text-3xl font-bold py-5">Make An Appointment</h2>
+                    <form action="" class="flex flex-col space-y-5">
+                        <input class="rounded bg-blue-50 px-4 py-4 w-full placeholder:text-xl" type="text" placeholder="Your Name">
+                        <input class="rounded bg-blue-50 px-4 py-4 w-full placeholder:text-xl"type="e-mail" placeholder="Your Mail">
+                        <textarea class="rounded-t-lg bg-blue-50 px-4 py-4 w-full h-40 placeholder:text-xl max-h-50 min-h-20 overflow-y-auto" placeholder="Your Message"></textarea>
+                    </form>
+                </div>
+                <div class="iframe mx-3">
+                   <iframe class="w-full h-[450px] md:h-[500px]" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.845967495073!2d29.01590507619179!3d40.99060997931198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac3a0c3b1c7e7%3A0x604b81b0b6e0c6f0!2sKad%C4%B1k%C3%B6y%2C%20Istanbul%2C%20Turkey!5e0!3m2!1str!2str!4v1756370000000!5m2!1str!2str" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#355592] mt-30 pb-10 px-5">
+        <div class="container mx-auto">
+            <div class="text-white">
+                <img src="img/logo.png" alt="Footer Logo">
+                <p class="text-xl font-medium w-full h-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem, quod, quae, voluptate, voluptas quia quibusdam voluptatibus quos doloribus quidem fugiat. Quisquam voluptatem, quod, quae, voluptate,
+                voluptas quia quibusdam voluptatibus quos doloribus quidem fugiat.</p>
+            </div>
+            <div class="grid grid-cols-2 mt-10">
+                <div class="flex justify-center items-center">
+                    <div class="text-white">
+                        <h3 class="text-3xl font-bold pb-2">Information</h3>
+                        <ul class="space-y-3">
+                            <li class="font-medium text-lg">About Us</li>
+                            <li class="font-medium text-lg">Classes</li>
+                            <li class="font-medium text-lg">Blog</li>
+                            <li class="font-medium text-lg">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="text-white">
+                        <h3 class="text-3xl font-bold pb-2">Helpful Links</h3>
+                        <ul class="space-y-3">
+                            <li class="font-medium text-lg">Services</li>
+                            <li class="font-medium text-lg">Supports</li>
+                            <li class="font-medium text-lg">Terms & Condition</li>
+                            <li class="font-medium text-lg">Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
